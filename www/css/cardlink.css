@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+
+.link{
+	color:black;
+	font-family: 'Poiret One', cursive;
+		
+}
+.card-title{
+	font-size:20px!important;
+}
+
+.link:hover{
+  color:#db5151;
+  text-decoration: none;
+     -webkit-box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+#haberresim{
+
+  width: 90%;
+}
+
+.haberdetay{
+    margin-top: 90px; 
+    width: 100%;
+    text-align: center;
+}
+#haberlink{
+  border:none;
+  width: 200px;
+  height: 50px;
+  border-radius: 50px!important;
+}
+
+#ifarme{
+   width: 100%; 
+   height:800px; 
+}
+
+.resimli{
+ 
+max-height: 100%; 
+max-width: 100%;
+
+}
+
+.atla{
+  border-radius:2px;
+ 
+}
+.atla:hover{
+   -webkit-box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+}

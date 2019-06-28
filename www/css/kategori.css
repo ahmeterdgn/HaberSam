@@ -1,0 +1,271 @@
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body.with-header {
+    padding-top: 70px;
+}
+
+body.with-footer {
+    padding-bottom: 70px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+    text-decoration: none;
+}
+
+/* Structure Components */
+.body {
+    margin: 0 20px;
+}
+
+.body > * {
+    margin: 10px 0;
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+
+.stack > * {
+    margin: 10px 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row > * {
+    margin: 10px 10px;
+}
+
+.row > *:first-child {
+    margin-left: 0;
+}
+
+.row > *:last-child {
+    margin-right: 0;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0px 4px 20px 0px rgba(79, 79, 79, 0.1);
+    padding: 10px 20px;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0px -4px 20px 0px rgba(79, 79, 79, 0.1);
+    padding: 10px 20px;
+}
+
+/* Typography */
+p,
+.label {
+    font-family: "Abhaya Libre";
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: #171717;
+}
+
+/* Icons */
+.fa {
+    display: block;
+    font-size: 20px;
+    color: #171717;
+    cursor: pointer;
+}
+
+/* Buttons */
+.button {
+    display: block;
+    padding: 10px 20px;
+    font-family: "Abhaya Libre";
+    font-size: 0.85rem;
+    color: #fff;
+    border-radius: 13px;
+    background: #f64747;
+    border: 0;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25)px;
+}
+
+.button .fa {
+    color: #fff;
+}
+
+a .button {
+    width: 100%;
+}
+
+/* Images */
+.image {
+    display: block;
+    height: 50px;
+    width: 50px;
+    background: #e2e2e2;
+    border: 0;
+    align-self: center;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.image.image-rectangle {
+    border-radius: 15px;
+}
+
+.image.image-circle {
+    border-radius: 50%;
+}
+
+/* Input Control */
+.input-field {
+    display: block;
+    font-family: "Abhaya Libre";
+    letter-spacing: 0px;
+    padding: 10px 0;
+    border: 0;
+    border-bottom: 1px solid #f64747;
+}
+
+/* Checkbox Control */
+.checkbox {
+    display: block;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #f64747;
+    color: #f64747;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.checkbox::before {
+    display: none;
+    content: "\f00c";
+    font-family: "FontAwesome";
+    font-size: 0.85em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.checkbox.checked::before {
+    display: block;
+}
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Switch Control */
+.switch {
+    display: block;
+    position: relative;
+    height: 24px;
+    width: 50px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 15px 0px rgba(79, 79, 79, 0.2);
+    cursor: pointer;
+}
+
+.switch::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 16px;
+    height: 16px;
+    background-color: #f64747;
+    border-radius: 50%;
+    transition: left 0.2s;
+}
+
+.switch.checked::before {
+    left: calc(100% - 20px);
+}
+
+.switch input {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Radio Control */
+.radio {
+    display: block;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 15px 0px rgba(79, 79, 79, 0.2);
+    cursor: pointer;
+}
+
+.radio::before {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    background-color: #f64747;
+    border-radius: 50%;
+}
+
+.radio.checked::before {
+    display: block;
+}
+
+.radio input {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Slider Control */
+.slider {
+    display: block;
+}

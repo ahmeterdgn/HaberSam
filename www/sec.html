@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sec</title>
+    <meta charset="uft-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" href="css/materialize.css">
+        <link rel="stylesheet" href="css/cardlink.css">
+        <link rel="stylesheet" href="css/all.css">
+        <script src="js/all.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+
+
+  <nav>
+  <a href="#!" class="brand-logo">Seçilen Site</a>
+    <ul id="slide-out" class="sidenav">
+      <img src="https://picsum.photos/300/300/?random">
+      <li><a href="index.html"><i class="fas fa-home fa-lg"></i> Ana Sayfa</a></li>
+      <li><a href="haber.html"><i class="fas fa-clock fa-lg"></i> Son Dakika</a></li>
+      <li><a href="sec.html"><i class="fas fa-hand-pointer fa-lg"></i> Seçilen Site</a></li>
+      <li><a href="borsa.html"><i class="fas fa-lira-sign fa-lg"></i> Borsa</a></li>
+      <li><a href="hava.html"><i class="fas fa-cloud-sun fa-lg"></i> Hava Durumu</a></li>
+
+    </ul>
+
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fas fa-bars fa-2x"></i></a> 
+    <a href="#" class="sidenav-trigger right paylas" style="display:none;">
+    <i class="fas fa-share-alt-square fa-2x"></i></a>
+    <a href="#" class="sidenav-trigger right site" style="display:none;"><i class="fab fa-chrome fa-2x"></i></a>
+
+    </nav>
+
+
+  <div class="input-field col s6" >
+
+  </div>
+            <div class='container haberler'> <!-- Haberlerin Tümü -->
+            </div>
+
+
+            <div class="container">  <!-- haber detayları -->
+            <div class="row">
+          <div class="col-12"> 
+    <div class='haberdetay' style="display:none;"> 
+    <img src="" id="haberresim"><br><br>
+     <h4 class="haberbaslik"></h4><br>
+     <p class="haberaciklama"></p><br>
+   <button id="haberlink" style="display:none;">DETAYLI OKU</button>
+  </div>  </div>  </div>
+
+        <iframe id="ifarme" src="" style="position:fixed; top:128px; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; display:none;"></iframe> <!-- detaylı oku -->     
+      
+        <script type="text/javascript">
+          
+
+var siteler = [
+"haber7.com",
+"ntv.com.tr",
+"haberturk.com",
+"aa.com.tr",
+"odatv.com",
+"bbc.com",
+"sputniknews.com",
+"amerikaninsesi.com",
+"euronews.com",
+"donanimhaber.com",
+"hurriyet.com.tr",
+"sozcu.com.tr",
+"sabah.com.tr"];
+         $.each(siteler, function(key, val) {
+        siteler.push("<option value="+key+">"+val+"</option>");
+        console.log(siteler);
+    });
+
+              
+
+        $("<select>", {
+        "class": "sectik",
+        html: siteler.join("")
+    }).appendTo("div.input-field");
+
+
+        </script>
+<script type="text/javascript" src="js/SocialSharing.js"></script>
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/seçilen site.js"></script>
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript">
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+
+  // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+  // var collapsibleElem = document.querySelector('.collapsible');
+  // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+        
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
+
+</script>
+</body>
+</html>

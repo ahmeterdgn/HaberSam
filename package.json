@@ -1,0 +1,38 @@
+{
+  "name": "com.habersam.app",
+  "displayName": "HaberSam",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cordova-android": "^8.0.0",
+    "cordova-plugin-splashscreen": "^5.0.2",
+    "cordova-plugin-x-socialsharing": "^5.4.6",
+    "es6-promise-plugin": "^4.2.2",
+    "onesignal-cordova-plugin": "2.4.7"
+  },
+  "devDependencies": {
+    "cordova-plugin-whitelist": "^1.3.3"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "onesignal-cordova-plugin": {},
+      "cordova-plugin-splashscreen": {},
+      "cordova-plugin-x-socialsharing": {
+        "ANDROID_SUPPORT_V4_VERSION": "24.1.1+"
+      }
+    },
+    "platforms": [
+      "android"
+    ]
+  }
+}

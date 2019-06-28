@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Borsa</title>
+    <meta charset="uft-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" href="css/materialize.css">
+        <link rel="stylesheet" href="css/cardlink.css">
+        <link rel="stylesheet" href="css/all.css">
+        <script src="js/all.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+
+
+  <nav>
+  <a href="#!" class="brand-logo">Borsa</a>
+    <ul id="slide-out" class="sidenav">
+      <img src="https://picsum.photos/300/300/?random">
+      <li><a href="index.html"><i class="fas fa-home fa-lg"></i> Ana Sayfa</a></li>
+      <li><a href="haber.html"><i class="fas fa-clock fa-lg"></i> Son Dakika</a></li>
+      <li><a href="sec.html"><i class="fas fa-hand-pointer fa-lg"></i> Seçilen Site</a></li>
+      <li><a href="borsa.html"><i class="fas fa-lira-sign fa-lg"></i> Borsa</a></li>
+      <li><a href="hava.html"><i class="fas fa-cloud-sun fa-lg"></i> Hava Durumu</a></li>
+
+    </ul>
+
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fas fa-bars fa-2x"></i></a> 
+    <a href="#" class="sidenav-trigger right paylas" style="display:none;">
+    <i class="fas fa-share-alt-square fa-2x"></i></a>
+    <a href="#" class="sidenav-trigger right site" style="display:none;"><i class="fab fa-chrome fa-2x"></i></a>
+
+    </nav>
+
+<div class="container">
+  <div class="row">
+  <div class="input-field col s6" id="ilk"></div>     
+  <div class="input-field col s6" id="iki"></div>  
+ <div class="col s6"><input type="text" name="hesapla"></div> <div class="col s6"> <p>fasdsfa</p></div>
+</div>
+</div>
+  <button id="hesapla">Kaç Tl</button>
+
+<div class="container borsa"></div> 
+
+
+
+
+
+
+
+<script src="js/borsa.js"></script>
+<script src="js/materialize.js"></script>
+<script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, );
+  });
+
+  // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+  // var collapsibleElem = document.querySelector('.collapsible');
+  // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+        
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems, );
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
+
+</script>
+</body>
+</html>
