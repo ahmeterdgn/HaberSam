@@ -2,16 +2,16 @@
 <widget id="com.habersam.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>HaberSam</name>
     <description>
-        Son Dakika 
+        Ahmet Erdoğan Haber App
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        F4MED-AE
+    <author email="ahmeterdgn6@gmail.com" href="http://ahmeterdgn.com">
+        Developer Ahmet Erdoğan
     </author>
+	<icon density="mdpi" height="57" platform="android" src="www\img\favicon.png" width="57" />
     <content src="index.html" />
-    <preference name = "SplashScreen" value = "screen" />
-    <preference name = "SplashScreenDelay" value = "3000" />
-    <preference name = "SplashMaintainAspectRatio" value = "true" />
-
+	<preference name="SplashMaintainAspectRatio" value="true|false" />
+	<preference name="SplashShowOnlyFirstTime" value="true|false" />
+	<preference name="SplashScreenSpinnerColor" value="white" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -27,7 +27,4 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
-    <feature name="SocialSharing">
-  <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
-</feature>
 </widget>
