@@ -27,7 +27,7 @@ $.getJSON("https://newsapi.org/v2/top-headlines?country=tr&apiKey=22c28c8658b14e
           "<img src='" + val.urlToImage + "'>"+
         "</div>"+
        "<div class='card-content'>"+
-       "<span class='card-title flow-text'>"+ val.title + "</span><p></p></div></div></div> </a> </div>"
+       "<span class='card-title flow-text'>"+ val.title.substring(0, 60)+ "..."+"</span><p></p></div></div></div> </a> </div>"
 
         );
 

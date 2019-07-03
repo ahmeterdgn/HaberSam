@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Heebo&display=swap');
 
 .link{
 	color:black;
-	font-family: 'Poiret One', cursive;
+font-family: 'Heebo', sans-serif;
 		
 }
 .card-title{
-	font-size:20px!important;
+	font-size:12px!important;
 }
 
 .link:hover{
