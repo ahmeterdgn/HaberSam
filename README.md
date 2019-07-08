@@ -19,3 +19,5 @@ ScreenShots                |  ScreenShots                     | ScreenShots
 `cordova plugins add cordova-plugin-splashscreen`
 
 `cordova plugin add cordova-plugin-geolocation`
+
+`cordova plugin add cordova-plugin-x-socialsharing`
