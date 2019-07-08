@@ -9,9 +9,9 @@
     </author>
 	<icon density="mdpi" height="57" platform="android" src="www\img\favicon.png" width="57" />
     <content src="index.html" />
-	<preference name="SplashMaintainAspectRatio" value="true|false" />
-	<preference name="SplashShowOnlyFirstTime" value="true|false" />
-	<preference name="SplashScreenSpinnerColor" value="white" />
+    <preference name = "SplashScreen" value = "screen" />
+    <preference name = "SplashScreenDelay" value = "3000" />
+    <preference name = "SplashMaintainAspectRatio" value = "true" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -27,4 +27,7 @@
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+	<feature name="SocialSharing">
+  <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
+</feature>
 </widget>

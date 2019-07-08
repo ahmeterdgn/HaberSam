@@ -54,8 +54,10 @@ $.getJSON("https://newsapi.org/v2/top-headlines?country=tr&apiKey=22c28c8658b14e
                 $(".haberaciklama").append(data.articles[ID].description);
                 $(".site").attr("href",data.articles[ID].url);
                 $(".paylas").click(function() {
+					alert("aasdf");
                  window.plugins.socialsharing.share('HaberSam App:', 'HaberSam App:', null, data.articles[ID].url);
-                                });
+				 
+                 });
                 $("button:hidden").show("slow");
                 $("div.haberdetay:hidden").show("slow");
                 $("a.icerik:hidden").show("slow");
