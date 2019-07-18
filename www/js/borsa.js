@@ -57,12 +57,12 @@ $('#degerler').click(function () {
 
 
 
- $('#hesapla').click(function(){
+ $('#para').keyup(function(){
     var para = document.getElementById("para").value;
     console.log(para);
 
     if (para == null || para == ""){
-        alert("Değer Verilmedi")
+    $(".cıkan").text(0);
 
 }else{
     var value = $( ".sectik option:selected" ).text();
