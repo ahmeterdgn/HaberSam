@@ -57,7 +57,7 @@ $('#degerler').click(function () {
 
 
 
- $('#para').keyup(function(){
+ $('#hesapla').click(function(){
     var para = document.getElementById("para").value;
     console.log(para);
 

@@ -13,9 +13,8 @@
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
   "dependencies": {
-    "cordova-android": "^8.0.0",
+    "cordova-android": "^8.1.0",
     "cordova-plugin-geolocation": "^4.0.1",
-    "cordova-plugin-splashscreen": "^5.0.3",
     "cordova-plugin-x-socialsharing": "^5.4.7",
     "es6-promise-plugin": "^4.2.2"
   },
@@ -25,8 +24,10 @@
   "cordova": {
     "plugins": {
       "cordova-plugin-whitelist": {},
-      "cordova-plugin-splashscreen": {},
-      "cordova-plugin-geolocation": {}
+      "cordova-plugin-geolocation": {},
+      "cordova-plugin-x-socialsharing": {
+        "ANDROID_SUPPORT_V4_VERSION": "24.1.1+"
+      }
     },
     "platforms": [
       "android"
