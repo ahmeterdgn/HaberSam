@@ -60,3 +60,9 @@ document.addEventListener('deviceready', function () {
     .endInit();
 }, false);
 app.initialize();
+
+
+document.addEventListener("deviceready", function(){
+  admob.banner.config({id:"ca-app-pub-3455768357590910/7605261732"});
+  admob.banner.prepare()
+}, false);

@@ -1,0 +1,41 @@
+ul#tabs-swipe-demo{
+ background:#212833;
+}
+.carousel .carousel-item{
+  width:100%;
+}
+
+
+.tabs .tab a:focus, .tabs .tab a:focus.active{
+	background-color:rgba(255, 255, 255, 0) !important;
+}
+.tabs .indicator {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background-color: red;
+  will-change: left, right;
+}
+
+.tabs .tab a{
+	color: orange!important;
+}
+.tabs .tab a:hover, .tabs .tab a.active{
+	color:white!important;
+}
+.tabs .indicator{
+	background-color:white!important;
+}
+.card{
+	margin: 0.5rem 0 0.5rem 0 !important;
+}
+.row .col {
+	padding:0 0.35rem!important;
+}
+.card .card-content{
+	padding:12px !important;
+}
+.card.atla.col.s12{
+		padding:0.1rem!important
+
+}

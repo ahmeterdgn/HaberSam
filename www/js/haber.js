@@ -21,12 +21,12 @@ $(".list").click(function(){
 $.getJSON("https://newsapi.org/v2/top-headlines?country=tr&apiKey=22c28c8658b14ed7b70a89f54011d392", function(data) {
     var items = [];
     $.each(data.articles, function(key, val) {
-        items.push("<div class='col s6'><a class='link' id='" + key + "' href='#" + key + "'>"+
+        items.push("<div class='col s6'><a class='link' id='" + key + "' href='#" + key + "' >"+
       "<div class='card'>"+
         "<div class='card-image'>"+
-          "<img src='" + val.urlToImage + "'>"+
+          "<img src='" + val.urlToImage + "' height='130' width='400'>"+
         "</div>"+
-       "<div class='card-content'>"+
+       "<div class='card-content center'>"+
        "<span class='card-title flow-text'>"+ val.title.substring(0, 60)+ "..."+"</span><p></p></div></div></div> </a> </div>"
 
         );
@@ -135,3 +135,17 @@ function onBackKeyDown() { //geri butonu
             "<div class='card-body'><h5 class='card-title'>" + val.title + "</h5></div></div></a></div>"
             */
 
+//http://app.haberler.com/services/haberlercom/2.11/service.asmx/haberler?deviceType=1&offset=0&count=40&category=manset
+
+$.getJSON("http://app.haberler.com/services/haberlercom/2.11/service.asmx/haberler?deviceType=1&offset=0&count=40&category=manset", function(data) {
+    let items = [];
+  console.log(data)
+
+    for (var i = data.length - 1; i >= 0; i--) {
+        items.push([i].category);
+    }
+   
+   
+  console.log(items)
+
+});

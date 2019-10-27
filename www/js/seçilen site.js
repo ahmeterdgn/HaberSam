@@ -17,10 +17,10 @@ let ifarmedencik = 0 ;
         items.push("<div class='col s6'><a class='link' id='" + key + "' href='#" + key + "'>"+
       "<div class='card'>"+
         "<div class='card-image'>"+
-          "<img src='" + val.urlToImage + "'>"+
+          "<img src='" + val.urlToImage + "' height='130' width='400'>"+
         "</div>"+
        "<div class='card-content'>"+
-       "<span class='card-title flow-text'>"+ val.title + "</span><p></p></div></div></div> </a> </div>"
+       "<span class='card-title flow-text'>"+ val.title.substring(0, 50)+ "..."+"</span><p></p></div></div></div> </a> </div>"
 
         );
 

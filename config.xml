@@ -1,10 +1,10 @@
-<?xml version='1.0' encoding='utf-8'?>
-<widget id="net.ahmeterdgn.habersam" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<?xml version='1.2' encoding='utf-8'?>
+<widget id="net.ahmeterdgn.habersam" version="1.2.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>HaberSam</name>
     <description>
         Ahmet Erdoğan Haber App
     </description>
-    <author email="ahmeterdgn6@gmail.com" href="http://ahmeterdgn.com">
+    <author email="ahmeterdgn6@gmail.com" href="http://ahmeterdgn.net">
         Developer Ahmet Erdoğan
     </author>
 	<icon density="mdpi" height="57" platform="android" src="www\img\favicon.png" width="57" />
@@ -16,6 +16,12 @@
         <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
     </feature>
     <plugin name="cordova-plugin-whitelist" spec="1" />
+        <plugin name="cordova-admob-sdk" spec="~0.24.1">
+        <variable name="PLAY_SERVICES_VERSION" value="11.6.0" />
+    </plugin>
+    <plugin name="cordova-plugin-admob-free" spec="0.27.0">
+        <variable name="ADMOB_APP_ID" value="ca-app-pub-3455768357590910/7605261732" />
+    </plugin>
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />

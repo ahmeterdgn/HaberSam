@@ -13,9 +13,12 @@
   "author": "Apache Cordova Team",
   "license": "Apache-2.0",
   "dependencies": {
+    "cordova-admob-sdk": "^0.24.1",
     "cordova-android": "^8.1.0",
+    "cordova-plugin-admob-free": "^0.27.0",
     "cordova-plugin-geolocation": "^4.0.1",
     "cordova-plugin-x-socialsharing": "^5.4.7",
+    "cordova-promise-polyfill": "0.0.2",
     "es6-promise-plugin": "^4.2.2"
   },
   "devDependencies": {
@@ -27,6 +30,12 @@
       "cordova-plugin-geolocation": {},
       "cordova-plugin-x-socialsharing": {
         "ANDROID_SUPPORT_V4_VERSION": "24.1.1+"
+      },
+      "cordova-admob-sdk": {
+        "PLAY_SERVICES_VERSION": "11.0.4"
+      },
+      "cordova-plugin-admob-free": {
+        "ADMOB_APP_ID": "ca-app-pub-3455768357590910/7605261732"
       }
     },
     "platforms": [
